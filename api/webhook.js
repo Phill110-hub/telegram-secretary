@@ -114,7 +114,7 @@ export default async function handler(req, res) {
 
       // --- 7. GEMINI AI GENERATION ---
       const currentDateTime = new Date().toLocaleString("en-KE", { timeZone: "Africa/Nairobi" });
-      const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
+      const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key=${process.env.GEMINI_API_KEY}`;
       
       // Construct the dynamic user message (Text + Audio if present)
       const userParts = [];
