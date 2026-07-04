@@ -70,7 +70,7 @@ export default async function handler(req, res) {
       // Dynamically inject the current date and time so the AI is temporally aware
       const currentDateTime = new Date().toLocaleString("en-KE", { timeZone: "Africa/Nairobi" });
       
-      const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-Lite:generateContent?key=${process.env.GEMINI_API_KEY}`;
+      const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key=${process.env.GEMINI_API_KEY}`;
       
       const aiResponse = await fetch(geminiUrl, {
         method: "POST",
